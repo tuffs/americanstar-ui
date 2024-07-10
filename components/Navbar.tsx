@@ -39,10 +39,16 @@ const Navbar = () => {
           <DropdownMenuContent>
             <DropdownMenuLabel className="dropdown-items">My Account</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem className="dropdown-items">Profile</DropdownMenuItem>
-            <DropdownMenuItem className="dropdown-items">Billing</DropdownMenuItem>
-            <DropdownMenuItem className="dropdown-items">Team</DropdownMenuItem>
-            <DropdownMenuItem className="dropdown-items">Subscription</DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/profile">
+                Profile
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/auth">
+                Logout
+              </Link>
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
