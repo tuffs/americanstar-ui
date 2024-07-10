@@ -25,7 +25,7 @@ const Navbar = () => {
           />
         </Link>
         <DropdownMenu>
-          <DropdownMenuTrigger>
+          <DropdownMenuTrigger className="focus:outline-none">
             <Avatar>
               <AvatarImage
                 src="https://github.com/shadcn.png"
@@ -37,17 +37,17 @@ const Navbar = () => {
             </Avatar>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuLabel className="dropdown-items">My Account</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Profile</DropdownMenuItem>
-            <DropdownMenuItem>Billing</DropdownMenuItem>
-            <DropdownMenuItem>Team</DropdownMenuItem>
-            <DropdownMenuItem>Subscription</DropdownMenuItem>
+            <DropdownMenuItem className="dropdown-items">Profile</DropdownMenuItem>
+            <DropdownMenuItem className="dropdown-items">Billing</DropdownMenuItem>
+            <DropdownMenuItem className="dropdown-items">Team</DropdownMenuItem>
+            <DropdownMenuItem className="dropdown-items">Subscription</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
     </>      
    );
 }
- 
+
 export default Navbar;

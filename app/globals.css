@@ -67,3 +67,7 @@
       @apply bg-background text-foreground;
     }
   }
+
+.dropdown-items {
+  cursor: pointer;
+}
